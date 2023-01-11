@@ -4,10 +4,11 @@ const btnSi = document.getElementById('si');
 const btnNo = document.getElementById('no');
 const container = document.getElementById('container');
 const meme = document.getElementById('meme');
+const cancionHot = new Audio('./src/audio-modo-hot.mp3');
+
+cancionHot.preload = 'auto';
 
 btnSi.onclick = () => {
-  const cancionHot = new Audio('./src/audio-modo-hot.mp3');
-
   cancionHot.play();
   meme.style.height = '100%';
   container.style.display = 'none';
